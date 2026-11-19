@@ -1,10 +1,21 @@
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
 }
 
 android {
-   android {
+    namespace = "ir.kjone.app"
+    compileSdk = 35
+
+    defaultConfig {
+        applicationId = "ir.kjone.app"
+        minSdk = 23
+        targetSdk = 35
+        versionCode = 1
+        versionName = "1.0"
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
@@ -13,6 +24,4 @@ android {
 
 kotlin {
     jvmToolchain(17)
-}
-    }
 }
